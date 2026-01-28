@@ -1,48 +1,17 @@
-# ----------------------------
-# Basic Site Info
-# ----------------------------
 title: "Automazioni per Studi Professionali"
-description: "Automazioni su misura per studi legali, commercialisti e professionisti"
+description: "Automazioni su misura per studi legali e professionisti"
 url: "https://TOP-AUTOMAZIONI.github.io"
 baseurl: ""
 
-# ----------------------------
-# Theme
-# ----------------------------
-remote_theme: "pages-themes/minimal@v0.2.1" # Tema ufficiale GitHub Pages
+# Tema ufficialmente supportato da GitHub Pages
+theme: jekyll-theme-minimal
+
 # Plugins supportati da GitHub Pages
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# ----------------------------
 # Author
-# ----------------------------
 author:
   name: "Tommaso Bini"
   bio: "Sviluppo automazioni su misura per eliminare attività ripetitive e aumentare l'efficienza."
-  avatar: "/assets/images/avatar.jpg" # vedremo dopo come aggiungere
-
-# ----------------------------
-# Navigation
-# ----------------------------
-navigation:
-  - title: "Home"
-    url: /
-  - title: "Come lavoro"
-    url: /come-lavoro/
-  - title: "Cosa automatizzo"
-    url: /automazioni/
-
-# ----------------------------
-# SEO & social
-# ----------------------------
-seo:
-  twitter:
-    username: "TUO_TWITTER"
-  github: "TUO-USERNAME"
-
-# ----------------------------
-# Permalink
-# ----------------------------
-permalink: pretty
