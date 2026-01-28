@@ -1,74 +1,102 @@
+/* Font e tipografia */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  line-height: 1.6;
+  background-color: #f8fafc;
+  color: #111827;
 }
 
-header {
-  background-color: #1f2937;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+h1, h2, h3 {
+  font-weight: 700;
+  color: #1f2937;
 }
 
+/* Layout */
 header nav ul {
-  list-style: none;
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  background: #1f2937;
+}
+
+header nav ul li {
+  margin: 0 15px;
 }
 
 header nav ul li a {
-  color: white;
   text-decoration: none;
-  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
 }
 
-.avatar {
-  width: 50px;
-  border-radius: 50%;
+header nav ul li a:hover {
+  color: #3b82f6;
 }
 
+/* Hero */
 .hero {
   text-align: center;
-  padding: 50px 20px;
-  background-color: #3b82f6;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
   color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
 .hero-image {
   max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
 }
 
-.specializzazioni {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: 0 auto;
+.hero-image:hover {
+  transform: scale(1.03);
 }
 
-.specializzazioni ul {
-  list-style: square;
-  margin-left: 20px;
+/* Specializzazioni / servizi */
+.specializzazioni, .services {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
-.cta {
-  text-align: center;
-  margin: 40px 0;
+.specializzazioni ul, .services ul {
+  list-style: none;
+  padding: 0;
 }
 
-.cta .btn {
-  background-color: #10b981;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+.specializzazioni ul li, .services ul li {
+  position: relative;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.specializzazioni ul li::before, .services ul li::before {
+  content: "✔";
+  color: #10b981;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.specializzazioni ul li:hover::before, .services ul li:hover::before {
+  transform: scale(1.3) rotate(15deg);
+}
+
+/* Footer fisso */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 footer {
@@ -76,4 +104,31 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  flex-shrink: 0;
+}
+
+/* Animazioni pagine */
+body {
+  transition: opacity 0.4s ease;
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+/* Pulsanti generici */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
