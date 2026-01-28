@@ -1,0 +1,11 @@
+remote_theme: "mmistakes/minimal-mistakes"
+title: "Automazioni per Studi Professionali"
+description: "Automazioni su misura per studi legali e professionisti"
+baseurl: ""
+url: "https://TOP-AUTOMAZIONI.github.io"
+author:
+  name: "Tommaso Bini"
+
+navigation:
+  - title: "Home"
+    url: /
