@@ -1,48 +1,28 @@
-# ----------------------------
-# Basic Site Info
-# ----------------------------
+---
+layout: home
 title: "Automazioni per Studi Professionali"
-description: "Automazioni su misura per studi legali, commercialisti e professionisti"
-url: "https://TUO-USERNAME.github.io"
-baseurl: ""
+author_profile: true
+permalink: /
+---
 
-# ----------------------------
-# Theme
-# ----------------------------
-remote_theme: "pages-themes/minimal@v0.2.1" # Tema ufficiale GitHub Pages
-# Plugins supportati da GitHub Pages
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+![Hero Image](/assets/images/hero.jpg)
 
-# ----------------------------
-# Author
-# ----------------------------
-author:
-  name: "Tommaso Bini"
-  bio: "Sviluppo automazioni su misura per eliminare attività ripetitive e aumentare l'efficienza."
-  avatar: "/assets/images/avatar.jpg" # vedremo dopo come aggiungere
+## Risparmio di tempo reale per studi professionali
 
-# ----------------------------
-# Navigation
-# ----------------------------
-navigation:
-  - title: "Home"
-    url: /
-  - title: "Come lavoro"
-    url: /come-lavoro/
-  - title: "Cosa automatizzo"
-    url: /automazioni/
+Aiuto studi legali, commercialisti e piccole aziende a **eliminare attività ripetitive**,  
+ridurre errori e liberare tempo per ciò che conta davvero.
 
-# ----------------------------
-# SEO & social
-# ----------------------------
-seo:
-  twitter:
-    username: "TUO_TWITTER"
-  github: "TUO-USERNAME"
+### Le nostre specializzazioni
 
-# ----------------------------
-# Permalink
-# ----------------------------
-permalink: pretty
+- **Documenti ripetitivi** compilati automaticamente (Word, Excel, PDF)  
+- **Creazione report** pronti in pochi secondi  
+- **Smistamento intelligente di email e richieste**  
+- **Controlli dati e file** senza errori  
+- **Workflow personalizzati** integrati con software esistenti
+
+---
+
+### Contattami
+
+Per capire insieme come automatizzare i tuoi processi:  
+[Scrivimi via email](mailto:tuo.email@email.com)
