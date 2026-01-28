@@ -1,10 +1,12 @@
 title: "Automazioni per Studi Professionali"
-description: "Soluzioni su misura per studi legali e commercialisti: risparmio di tempo reale"
-url: "https://TOP-AUTOMAZIONI.github.io"
+description: "Soluzioni su misura per studi legali e commercialisti"
 baseurl: ""
+url: "https://TOP-AUTOMAZIONI.github.io"
 
-theme: jekyll-theme-minimal
+# Tema avanzato remoto
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
+# Plugin supportati da GitHub Pages
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -23,8 +25,3 @@ navigation:
     url: /automazioni/
 
 permalink: pretty
-
-seo:
-  twitter:
-    username: "TUO_TWITTER"
-  github: "TUO-USERNAME"
