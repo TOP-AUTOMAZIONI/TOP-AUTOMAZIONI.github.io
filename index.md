@@ -39,4 +39,4 @@ L’obiettivo è uno solo:
 ---
 
 📩 **Contatto diretto via email**  
-Scrivetemi descrivendo il problema o il processo che vi rallenta.
+Scrivetemi descrivendo il problema o il processo che vi rallenta. oK
