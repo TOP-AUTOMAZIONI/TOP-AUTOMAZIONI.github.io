@@ -96,7 +96,7 @@ body {
 }
 
 main {
-  max-width: 900px;   /* o 800px se lo vuoi più compatto */
+  max-width: 1200px;   /* o 800px se lo vuoi più compatto */
   margin: 0 auto;     /* centra il blocco nella pagina */
   padding: 0 20px;    /* respiro sui lati (mobile friendly) */
   flex: 1;
