@@ -96,6 +96,7 @@ body {
 }
 
 main {
+  text-align: center;
   flex: 1;
 }
 
