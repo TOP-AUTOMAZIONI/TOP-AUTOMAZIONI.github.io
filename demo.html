@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ site.title }} - Demo</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+
 <header>
   <nav>
     <ul>
@@ -22,104 +25,91 @@
 
 <main class="fade-in">
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <h1>Demo & Progetti</h1>
+      <h1>Demo di automazione reale</h1>
       <p class="subtitle">
-        Automazioni reali, progettate per risolvere problemi concreti.
+        Esempi concreti di come processi manuali possono diventare sistemi automatici,
+        affidabili e pronti per l’uso professionale.
       </p>
     </div>
   </section>
 
-  <section class="content">
-    <div class="container">
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container narrow">
       <p>
-        Qui presentiamo alcune demo tecniche basate su scenari professionali reali.
-        Non sono prototipi teorici, ma esempi funzionanti di come un processo
-        manuale possa essere trasformato in un sistema affidabile e automatizzato.
+        Le demo che seguono non sono esercizi teorici.
+        Rappresentano soluzioni sviluppate partendo da problemi reali
+        riscontrati in studi professionali e contesti operativi quotidiani.
       </p>
       <p>
-        Ogni soluzione è progettata con attenzione a robustezza, chiarezza del codice
-        e facilità di utilizzo finale.
+        Ogni demo è analizzata in una pagina dedicata,
+        dove viene spiegato il problema, la soluzione tecnica
+        e il risultato ottenuto.
       </p>
     </div>
   </section>
 
-  <!-- DEMO 1 -->
-  <section class="demo-box">
+  <!-- DEMO LIST -->
+  <section class="section section-alt">
     <div class="container">
-      <h2>Automazione documenti (Word)</h2>
 
-      <p><strong>Problema:</strong></p>
-      <p>
-        Creazione manuale di documenti ripetitivi partendo da dati strutturati
-        (clienti, importi, date), con alto rischio di errore umano.
-      </p>
+      <div class="steps">
 
-      <p><strong>Soluzione:</strong></p>
-      <p>
-        Script Python che legge i dati da file Excel o CSV e genera automaticamente
-        documenti Word compilati a partire da template personalizzati.
-      </p>
+        <!-- DEMO 1 -->
+        <div class="step">
+          <h3>Automazione documenti</h3>
+          <p>
+            Generazione automatica di documenti Word
+            partendo da dati strutturati.
+          </p>
+          <a href="demo-documenti.html" class="btn-primary">
+            Vedi demo completa
+          </a>
+        </div>
 
-      <p><strong>Benefici:</strong></p>
-      <ul>
-        <li>Riduzione drastica dei tempi</li>
-        <li>Eliminazione degli errori manuali</li>
-        <li>Documenti coerenti e standardizzati</li>
-      </ul>
+        <!-- DEMO 2 -->
+        <div class="step">
+          <h3>Analisi documenti PDF</h3>
+          <p>
+            Estrazione e organizzazione automatica
+            di informazioni da PDF complessi.
+          </p>
+          <a href="#" class="btn-primary">
+            In arrivo
+          </a>
+        </div>
+
+        <!-- DEMO 3 -->
+        <div class="step">
+          <h3>Classificazione email</h3>
+          <p>
+            Analisi e smistamento automatico delle email
+            per priorità e tipologia.
+          </p>
+          <a href="#" class="btn-primary">
+            In arrivo
+          </a>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
-  <!-- DEMO 2 -->
-  <section class="demo-box">
-    <div class="container">
-      <h2>Analisi e classificazione PDF</h2>
-
-      <p><strong>Problema:</strong></p>
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container center">
+      <h2>Hai un processo simile da automatizzare?</h2>
       <p>
-        Gestione di grandi quantità di documenti PDF contenenti informazioni
-        difficili da consultare e organizzare manualmente.
+        Ogni soluzione mostrata può essere adattata
+        alle esigenze specifiche del tuo studio o attività.
       </p>
-
-      <p><strong>Soluzione:</strong></p>
-      <p>
-        Sistema automatico che analizza i PDF, estrae i dati rilevanti
-        e li converte in formati strutturati.
-      </p>
-
-      <p><strong>Benefici:</strong></p>
-      <ul>
-        <li>Ricerca immediata delle informazioni</li>
-        <li>Archiviazione ordinata</li>
-        <li>Riduzione del lavoro ripetitivo</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- DEMO 3 -->
-  <section class="demo-box">
-    <div class="container">
-      <h2>Classificazione intelligente email</h2>
-
-      <p><strong>Problema:</strong></p>
-      <p>
-        Caselle email sovraccariche, difficoltà nel distinguere le priorità
-        e nel gestire richieste ripetitive.
-      </p>
-
-      <p><strong>Soluzione:</strong></p>
-      <p>
-        Script che analizza il contenuto delle email, le classifica per categoria
-        e identifica i messaggi più urgenti.
-      </p>
-
-      <p><strong>Benefici:</strong></p>
-      <ul>
-        <li>Inbox più ordinata</li>
-        <li>Risposte più rapide</li>
-        <li>Meno stress operativo</li>
-      </ul>
+      <a href="contact.html" class="btn-primary">
+        Contattaci
+      </a>
     </div>
   </section>
 
@@ -129,6 +119,5 @@
   <p>© 2026 — Tutti i diritti riservati</p>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
