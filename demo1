@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Automazione Documenti | Excel → Word</title>
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --bg-soft: #111827;
+            --card: #020617;
+            --text: #e5e7eb;
+            --text-muted: #9ca3af;
+            --accent: #38bdf8;
+            --border: rgba(255,255,255,0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, var(--bg), var(--bg-soft));
+            color: var(--text);
+            line-height: 1.65;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 24px 120px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        header h1 {
+            font-size: clamp(2.2rem, 4vw, 3.2rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        header p {
+            max-width: 720px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            color: var(--text-muted);
+        }
+
+        .demo-box {
+            background: radial-gradient(circle at top, #020617, #000);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 80px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+        }
+
+        .demo-placeholder {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 12px;
+            border: 1px dashed var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            background: #020617;
+        }
+
+        section {
+            margin-bottom: 72px;
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p {
+            max-width: 820px;
+            margin: 0 auto 16px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .workflow {
+            max-width: 700px;
+            margin: 40px auto 0;
+            text-align: left;
+        }
+
+        .workflow li {
+            margin-bottom: 12px;
+            list-style: none;
+            padding-left: 24px;
+            position: relative;
+            color: var(--text-muted);
+        }
+
+        .workflow li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .cta {
+            background: linear-gradient(180deg, #020617, #000);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 40px 100px rgba(0,0,0,0.7);
+        }
+
+        .cta h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 32px;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .cta a {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 999px;
+            background: var(--accent);
+            color: #020617;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(56,189,248,0.4);
+        }
+
+        footer {
+            margin-top: 120px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Automazione Documenti Professionali</h1>
+        <p>
+            Generazione automatica di documenti Word partendo da Excel.
+            Zero errori, zero copia-incolla, massimo controllo.
+        </p>
+    </header>
+
+    <div class="demo-box">
+        <div class="demo-placeholder">
+            QUI INSERIRAI LA GIF O IL VIDEO DELLA DEMO
+        </div>
+    </div>
+
+    <section>
+        <h2>Il problema reale negli studi</h2>
+        <p>
+            Ogni giorno ore perse tra copia-incolla, documenti ripetitivi,
+            errori manuali e controlli inutili.
+        </p>
+        <p>
+            Questo processo non scala, non è sicuro e costa tempo qualificato.
+        </p>
+    </section>
+
+    <section>
+        <h2>La nostra soluzione</h2>
+        <p>
+            Automatizziamo la creazione di documenti professionali
+            partendo da dati che già possedete.
+        </p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Input Excel</h3>
+                <p>Dati strutturati, nessuna modifica alle vostre abitudini.</p>
+            </div>
+            <div class="card">
+                <h3>Template Word</h3>
+                <p>Documenti coerenti, personalizzati e pronti all’uso.</p>
+            </div>
+            <div class="card">
+                <h3>Generazione automatica</h3>
+                <p>Un file per cliente, in pochi secondi.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Come funziona, in pratica</h2>
+
+        <ul class="workflow">
+            <li>Inserite o aggiornate i dati in un file Excel</li>
+            <li>Avviate lo script (un click o comando)</li>
+            <li>I documenti vengono generati automaticamente</li>
+            <li>Pronti per invio, stampa o archiviazione</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Perché è diverso dalle soluzioni generiche</h2>
+        <p>
+            Ogni automazione è costruita su misura, adattata
+            ai vostri documenti, ai vostri flussi, al vostro modo di lavorare.
+        </p>
+        <p>
+            Nessun software inutilmente complesso.
+            Nessun abbonamento forzato.
+        </p>
+    </section>
+
+    <div class="cta">
+        <h2>Vuoi vedere se è applicabile al tuo studio?</h2>
+        <p>
+            Scrivici descrivendo il tipo di documenti che utilizzi.
+            Valuteremo gratuitamente se e come automatizzarli.
+        </p>
+        <a href="mailto:info@tuodominio.it">Contattaci via email</a>
+    </div>
+
+    <footer>
+        © 2026 — Automazione Documenti Professionali
+    </footer>
+
+</div>
+
+</body>
+</html>
